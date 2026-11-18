@@ -5,13 +5,13 @@ An entry for the make.fun bounty
 1024×1024 image summing up the world news of Tuesday, 17 November 2026.
 
 V1 of this entry carried six stories and ranked mid-field; the leaders
-carry dozens. V2 is a dense broadsheet front page with **25 stories**: the
+carry dozens. V2 is a dense broadsheet front page with **26 stories**: the
 same four illustrated leads (Crimea bridge barrage, Iran–Bahrain/Hormuz,
 the Xi–Trump–Putin Shenzhen summit, the failed Vulcan launch), 18 text
 briefs spanning markets, migration, climate, health, technology and four
-continents, and a three-item ticker (the U.S. losing measles-free status,
-the Pope's rosary forgiveness in Peru, and Robert Pattinson named as the
-new James Bond).
+continents, and a four-item ticker (the U.S. losing measles-free status,
+the Pope's rosary forgiveness in Peru, Robert Pattinson named as the new
+James Bond, and Jay Shah re-elected ICC chairman).
 
 ## How it works
 

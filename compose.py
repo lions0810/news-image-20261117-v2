@@ -132,9 +132,12 @@ BRIEFS = [
      "Tehran refuses access to its damaged nuclear sites until the US meets its conditions, its deputy foreign minister said."),
 ]
 
-TICKER = ("U.S. LOSES MEASLES-FREE STATUS AFTER 30 YEARS  \u2022  "
-          "POPE FORGIVES MAN WHO HIT HIM IN THE EYE WITH A ROSARY IN PERU  \u2022  "
-          "ROBERT PATTINSON NAMED THE NEW JAMES BOND")
+TICKER_LINES = [
+    "U.S. LOSES MEASLES-FREE STATUS AFTER 30 YEARS  \u2022  "
+    "POPE FORGIVES MAN WHO HIT HIM IN THE EYE WITH A ROSARY IN PERU",
+    "ROBERT PATTINSON NAMED THE NEW JAMES BOND  \u2022  "
+    "ICC ELECTS JAY SHAH CHAIRMAN FOR A SECOND TERM",
+]
 
 
 def font(path, size):
@@ -263,10 +266,16 @@ def draw_briefs(draw):
 def draw_footer(draw):
     fy = H - FOOTER_H
     draw.rectangle([0, fy, W, H], fill=BLACK)
-    ticker_font = fit_font(draw, TICKER, REGULAR, 17, W - 24, min_size=12)
-    bbox = draw.textbbox((0, 0), TICKER, font=ticker_font)
-    th = bbox[3] - bbox[1]
-    draw_centred(draw, fy + (FOOTER_H - th) / 2 - bbox[1], TICKER, ticker_font, WHITE)
+    # Two centred ticker lines; each is fitted and asserted so a line can
+    # never silently run off the canvas again (V2's first cut clipped one).
+    line_h = FOOTER_H // 2
+    for i, line in enumerate(TICKER_LINES):
+        fnt = fit_font(draw, line, REGULAR, 15, W - 24, min_size=11)
+        assert draw.textlength(line, font=fnt) <= W - 24, line
+        bbox = draw.textbbox((0, 0), line, font=fnt)
+        th = bbox[3] - bbox[1]
+        draw_centred(draw, fy + i * line_h + (line_h - th) / 2 - bbox[1],
+                     line, fnt, WHITE)
 
 
 def compose():
