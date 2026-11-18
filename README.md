@@ -1,5 +1,9 @@
 # One Day in the World — 17 November 2026 (V2: the broadside)
 
+[![make.fun · news-image-20261117](https://make.fun/badge/news-image-20261117.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![rank](https://make.fun/badge/news-image-20261117/lions0810/news-image-20261117-v2/rank.svg)](https://make.fun/bounty/news-image-20261117/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![reward](https://make.fun/badge/news-image-20261117/lions0810/news-image-20261117-v2/reward.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+
 An entry for the make.fun bounty
 [news-image-20261117](https://make.fun/bounty/news-image-20261117): one
 1024×1024 image summing up the world news of Tuesday, 17 November 2026.
